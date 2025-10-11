@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.3",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@types/node": "^22.18.8",
+    "forge-std": "git+https://github.com/foundry-rs/forge-std.git",
+    "hardhat": "^3.0.7",
+    "typescript": "~5.8.3",
+    "viem": "^2.38.0"
+  }
+}

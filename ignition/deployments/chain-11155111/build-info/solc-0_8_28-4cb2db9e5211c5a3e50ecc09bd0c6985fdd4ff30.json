@@ -1,0 +1,39 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-4cb2db9e5211c5a3e50ecc09bd0c6985fdd4ff30",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "userSourceNameMap": {
+    "contracts/HelloWorld.sol": "project/contracts/HelloWorld.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/HelloWorld.sol": {
+        "content": "pragma solidity ^0.8.28;\n\ncontract HelloWorld {\n  event messageChanged(string oldEvent, string newEvent);\n\n  string public message;\n\n  constructor(string memory firstMessage) {\n    message = firstMessage;\n  }\n\n  function update(string memory newMessage) public {\n    string memory oldMessage = message;\n    message = newMessage;\n\n    emit messageChanged(oldMessage, newMessage);\n  }\n}"
+      }
+    }
+  }
+}

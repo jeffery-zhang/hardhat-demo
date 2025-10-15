@@ -58,7 +58,7 @@ const message1 = await contract.read.message();
 
 console.log(message1);
 
-await contract.read.update(["Hello, sepolia!"]);
+await contract.write.update(["Hello, sepolia!"]);
 
 const message2 = await contract.read.message();
 
